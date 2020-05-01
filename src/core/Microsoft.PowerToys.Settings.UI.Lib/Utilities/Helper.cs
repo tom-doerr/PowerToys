@@ -71,5 +71,10 @@ namespace Microsoft.PowerToys.Settings.UI.Lib.Utilities
         {
             return layoutMap.GetKeyName(key);
         }
+
+        public static string GetProductVersion()
+        {
+            return interop.CommonManaged.GetProductVersion();
+        }
     }
 }

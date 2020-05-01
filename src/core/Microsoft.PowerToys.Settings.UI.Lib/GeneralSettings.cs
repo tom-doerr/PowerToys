@@ -37,10 +37,6 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
         [JsonPropertyName("system_theme")]
         public string SystemTheme { get; set; }
 
-        // Gets or sets powertoys version number.
-        [JsonPropertyName("powertoys_version")]
-        public string PowertoysVersion { get; set; }
-
         [JsonPropertyName("enabled")]
         public EnabledModules Enabled { get; set; }
 
@@ -52,7 +48,6 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
             this.IsElevated = false;
             this.Theme = "system";
             this.SystemTheme = "light";
-            this.PowertoysVersion = "v0.15.3";
             this.Enabled = new EnabledModules();
         }
 
